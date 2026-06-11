@@ -1,0 +1,197 @@
+/* ========== TABLETTE (max 1024px) ========== */
+@media (max-width: 1024px) {
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .presta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .galerie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ========== MOBILE (max 768px) ========== */
+@media (max-width: 768px) {
+
+  /* --- NAVBAR --- */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    gap: 16px;
+    border-top: 2px solid #d0d0d0;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .btn-phone {
+    display: none;
+  }
+
+  .nav-inner {
+    position: relative;
+  }
+
+  /* --- HERO --- */
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-height: 220px;
+  }
+
+  /* --- FORMATIONS --- */
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- PRESTATIONS --- */
+  .presta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- CONDITIONS --- */
+  .conditions-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cond-left,
+  .cond-right {
+    padding: 28px 20px;
+  }
+
+  /* --- GALERIE --- */
+  .galerie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* --- FOOTER --- */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer {
+    padding: 36px 0 0;
+  }
+}
+
+/* ========== PETIT MOBILE (max 480px) ========== */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.88rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 10px 16px;
+    font-size: 0.82rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .galerie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .galerie-grid img {
+    height: 130px;
+  }
+
+  .logo-title {
+    font-size: 0.85rem;
+  }
+
+  .logo-sub {
+    font-size: 0.55rem;
+  }
+
+  .whatsapp-float {
+    width: 46px;
+    height: 46px;
+    font-size: 1.3rem;
+    bottom: 18px;
+    right: 18px;
+  }
+}
+/* ========== A PROPOS ========== */
+@media (max-width: 1024px) {
+  .mvv-grid { grid-template-columns: repeat(2, 1fr); }
+  .chiffres-grid { grid-template-columns: repeat(2, 1fr); }
+  .equipe-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .apropos-inner { grid-template-columns: 1fr; }
+  .apropos-img img { height: 250px; }
+  .mvv-grid { grid-template-columns: 1fr; }
+  .chiffres-grid { grid-template-columns: repeat(2, 1fr); }
+  .equipe-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .chiffres-grid { grid-template-columns: 1fr; }
+  .chiffre-number { font-size: 2rem; }
+}
+/* ========== CONTACT ========== */
+@media (max-width: 1024px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .carte-section {
+    padding: 40px 0;
+  }
+}
