@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galerie – CTIE-BENIN</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/responsive.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <img src="../images/logo.png" alt="CTIE-BENIN Logo"/>
+        <div class="logo-text">
+          <span class="logo-title">CTIE-BENIN</span>
+          <span class="logo-sub">Centre des Techniques Informatique et Électronique</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="galerie.html" class="active">Galerie</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="tel:+22901658480010" class="btn-phone">
+        <i class="fas fa-phone"></i> +229 01 65 84 80 10
+      </a>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== BANNIERE ========== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Notre Galerie</h1>
+      <p>Découvrez nos locaux, nos équipements et nos apprenants en action</p>
+    </div>
+  </section>
+
+  <!-- ========== GALERIE COMPLETE ========== -->
+  <section class="section galerie-page">
+    <div class="container">
+      <h2 class="section-title">NOS PHOTOS</h2>
+
+      <!-- Filtres -->
+      <div class="galerie-filtres">
+        <button class="filtre-btn active" data-filter="all">Tout</button>
+        <button class="filtre-btn" data-filter="formation">Formations</button>
+        <button class="filtre-btn" data-filter="equipement">Équipements</button>
+        <button class="filtre-btn" data-filter="locaux">Locaux</button>
+      </div>
+
+      <!-- Grille photos -->
+      <div class="galerie-full-grid">
+
+        <div class="galerie-item" data-category="locaux">
+          <img src="../images/galerie/photo1.jpg" alt="Locaux CTIE"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="equipement">
+          <img src="../images/galerie/photo2.jpg" alt="Équipements"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="formation">
+          <img src="../images/galerie/photo3.jpg" alt="Formation en cours"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="equipement">
+          <img src="../images/galerie/photo4.jpg" alt="Matériel informatique"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="locaux">
+          <img src="../images/galerie/photo5.jpg" alt="Salle de cours"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="formation">
+          <img src="../images/galerie/photo1.jpg" alt="Apprenants"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="locaux">
+          <img src="../images/galerie/photo2.jpg" alt="Atelier"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="equipement">
+          <img src="../images/galerie/photo3.jpg" alt="Outils"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+        <div class="galerie-item" data-category="formation">
+          <img src="../images/galerie/photo4.jpg" alt="Cours pratique"/>
+          <div class="galerie-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-prev" id="lightbox-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <img src="" alt="" id="lightbox-img"/>
+      <button class="lightbox-next" id="lightbox-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>À Propos</h4>
+        <p>CTIE-BENIN est un centre de formation et de prestations professionnelles dans les domaines de l'informatique, de l'électronique, du GSM, de la maintenance, de la bureautique et plus encore.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contactez-nous</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Calavi – zone du CEG kansounkpa</p>
+        <p><i class="fas fa-phone"></i> +229 01 65 84 80 10</p>
+        <p><i class="fas fa-phone"></i> +229 01 47 54 57 24</p>
+        <p><i class="fas fa-envelope"></i> gbetchedjibaudelaire@gmail.com</p>
+        <p><i class="fab fa-facebook"></i> Facebook : CTIE-BENIN</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <a href="#" class="fb-icon"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CTIE-BENIN – Tous droits réservés. &nbsp;|&nbsp; Conçu avec ❤️ pour votre avenir</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/22901658480010" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/galerie.js"></script>
+</body>
+</html>
