@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTIE-BENIN | Centre des Techniques Informatique et Électronique</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
 
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <img src="images/logo.png" alt="CTIE-BENIN Logo"/>
+        <div class="logo-text">
+          <span class="logo-title">CTIE-BENIN</span>
+          <span class="logo-sub">Centre des Techniques Informatique et Électronique</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="pages/formations.html">Formations</a>
+        <a href="pages/prestations.html">Prestations</a>
+        <a href="pages/galerie.html">Galerie</a>
+        <a href="pages/apropos.html">À propos</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+      <a href="tel:+22901658480010" class="btn-phone">
+        <i class="fas fa-phone"></i> +229 01 65 84 80 10
+      </a>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>La compétence d'aujourd'hui,<br/>
+          <span class="highlight">L'excellence de demain !</span>
+        </h1>
+        <p>CTIE-BENIN, votre centre de formation et de prestations professionnelles pour un avenir meilleur. Nous formons, nous accompagnons, nous vous rendons compétent.</p>
+        <div class="hero-btns">
+          <a href="pages/formations.html" class="btn-primary">S'inscrire maintenant</a>
+          <a href="pages/formations.html" class="btn-outline">Découvrir nos formations</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-bg.jpg" alt="CTIE-BENIN Centre"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORMATIONS ========== -->
+  <section class="section formations" id="formations">
+    <div class="container">
+      <h2 class="section-title">NOS FORMATIONS</h2>
+      <div class="cards-grid">
+
+        <div class="card">
+          <img src="images/formations/maintenance.jpg" alt="Maintenance Informatique"/>
+          <div class="card-body">
+            <h3>Maintenance Informatique</h3>
+            <p class="price">120.000 FCFA</p>
+            <p class="duree">Durée : 12 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formations/electronique.jpg" alt="Électronique"/>
+          <div class="card-body">
+            <h3>Électronique</h3>
+            <p class="price">130.000 FCFA</p>
+            <p class="duree">Durée : 12 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formations/gsm.jpg" alt="GSM"/>
+          <div class="card-body">
+            <h3>GSM</h3>
+            <p class="price">80.000 FCFA</p>
+            <p class="duree">Durée : 6 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formations/saisie.jpg" alt="Opération de Saisie"/>
+          <div class="card-body">
+            <h3>Opération de Saisie</h3>
+            <p class="price">66.000 FCFA</p>
+            <p class="duree">Durée : 6 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formations/antenne.jpg" alt="Installation d'Antenne"/>
+          <div class="card-body">
+            <h3>Installation d'Antenne</h3>
+            <p class="price">70.000 FCFA</p>
+            <p class="duree">Durée : 6 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/formations/secretariat.jpg" alt="Secrétariat Bureautique"/>
+          <div class="card-body">
+            <h3>Secrétariat Bureautique</h3>
+            <p class="price">120.000 FCFA</p>
+            <p class="duree">Durée : 12 mois<br/>+ 3 mois de stage</p>
+            <a href="pages/formations.html" class="btn-card">En savoir plus</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRESTATIONS ========== -->
+  <section class="section prestations" id="prestations">
+    <div class="container">
+      <h2 class="section-title">NOS PRESTATIONS</h2>
+      <div class="presta-grid">
+
+        <div class="presta-card">
+          <i class="fas fa-desktop"></i>
+          <h3>Maintenance Informatique</h3>
+          <p>Dépannage, formatage, installation de logiciels, nettoyage, etc.</p>
+        </div>
+
+        <div class="presta-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Réparation des Téléphones</h3>
+          <p>Tous types de pannes matérielles et logiciels.</p>
+        </div>
+
+        <div class="presta-card">
+          <i class="fas fa-print"></i>
+          <h3>Photocopie – Saisie – Tirage</h3>
+          <p>Photocopies, saisie de documents, tirage et impressions.</p>
+        </div>
+
+        <div class="presta-card">
+          <i class="fas fa-id-card"></i>
+          <h3>Plastification – Conception</h3>
+          <p>Plastification de documents, conception de flyers, affiches, etc.</p>
+        </div>
+
+        <div class="presta-card">
+          <i class="fas fa-headphones"></i>
+          <h3>Vente d'Accessoires GSM et Équipements</h3>
+          <p>Vente d'accessoires GSM, pièces et équipements.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONDITIONS ========== -->
+  <section class="conditions">
+    <div class="container conditions-inner">
+      <div class="cond-left">
+        <h3>CONDITIONS D'INSCRIPTION</h3>
+        <ul>
+          <li><i class="fas fa-check"></i> Inscription : 3.000 FCFA</li>
+          <li><i class="fas fa-check"></i> Uniforme : 5.000 FCFA</li>
+          <li><i class="fas fa-check"></i> Soutenance + Diplôme</li>
+          <li><i class="fas fa-check"></i> Attestation : CQM et CQP</li>
+        </ul>
+      </div>
+      <div class="cond-right">
+        <h3>NOUS SOMMES À CALAVI</h3>
+        <p>dans la zone du CEG kansounkpa</p>
+        <p><i class="fas fa-phone"></i> +229 01 65 84 80 10</p>
+        <p><i class="fas fa-phone"></i> +229 01 47 54 57 24</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERIE ========== -->
+  <section class="section galerie" id="galerie">
+    <div class="container">
+      <h2 class="section-title">GALERIE</h2>
+      <div class="galerie-grid">
+        <img src="images/galerie/photo1.jpg" alt="Photo 1"/>
+        <img src="images/galerie/photo2.jpg" alt="Photo 2"/>
+        <img src="images/galerie/photo3.jpg" alt="Photo 3"/>
+        <img src="images/galerie/photo4.jpg" alt="Photo 4"/>
+        <img src="images/galerie/photo5.jpg" alt="Photo 5"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col">
+        <h4>À Propos</h4>
+        <p>CTIE-BENIN est un centre de formation et de prestations professionnelles dans les domaines de l'informatique, de l'électronique, du GSM, de la maintenance, de la bureautique et plus encore.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liens Rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="pages/formations.html">Formations</a></li>
+          <li><a href="pages/prestations.html">Prestations</a></li>
+          <li><a href="pages/galerie.html">Galerie</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contactez-nous</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Calavi – zone du CEG kansounkpa</p>
+        <p><i class="fas fa-phone"></i> +229 01 65 84 80 10</p>
+        <p><i class="fas fa-phone"></i> +229 01 47 54 57 24</p>
+        <p><i class="fas fa-envelope"></i> gbetchedjibaudelaire@gmail.com</p>
+        <p><i class="fab fa-facebook"></i> Facebook : CTIE-BENIN</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <a href="#" class="fb-icon"><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CTIE-BENIN – Tous droits réservés. &nbsp;|&nbsp; Conçu avec ❤️ pour votre avenir</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flottant -->
+  <a href="https://wa.me/22901658480010" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
